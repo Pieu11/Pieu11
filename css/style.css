@@ -1,0 +1,147 @@
+:root{
+    --color1: #C67179;
+    --color2: #A1444D;
+    --color3: #832830;
+    --color4: #5E0F17;
+    --color5: #3A0006;
+}
+/* --------------------------------------------------GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+/* --------------------------------------------------GENERALES */
+
+
+/* --------------------------------------------------HEADER */
+header{
+    background: var(--color4);
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+.logo{
+    
+}
+.logo img{
+    width: 45px;
+}
+.header-nav{
+    font-size: 1.7rem;
+}
+.header-nav ul{
+    display: flex;
+}
+.header-nav-item{
+    margin-left: 10px;
+}
+.header-nav-item a{
+    color: white;
+}
+/* --------------------------------------------------HEADER */
+
+
+/* --------------------------------------------------MAIN */
+main{
+    width: 100%;
+}
+.principal-section1{
+    height: 230px;
+    background-color: var(--color2);
+    background-image: url('https://negativespace.co/wp-content/uploads/2017/10/negative-space-code-html-css-editor-boskampi-thumb-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    width: 100%;
+}
+.principal-section1 p{
+    color: white;
+    font-size: 2.1rem;
+}
+.principal-section2{
+    background: var(--color2);
+    width: 100%;
+    padding: 50px 0;
+}
+.principal-section2 h1{
+    color: white;
+    border-bottom: 2px solid var(--color4);
+    width: 250px;
+    margin: 0 auto 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.principal-section2 p{
+    color: black;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+/* --------------------------------------------------MAIN */
+
+
+/* --------------------------------------------------FOOTER */
+footer{
+    color: white;
+    background: var(--color5);
+    padding: 15px 0;
+    width: 100%;
+}
+.logo-footer{
+    margin: 0 auto;
+    width: max-content;
+}
+.logo-footer img{
+    width: 40px;
+}
+.redes{
+    border-top: 2px solid white;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px auto 0;
+    padding: 10px 15px 0;
+    width: max-content;
+}
+.redes i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+/* --------------------------------------------------FOOTER */
+
+
+/* --------------------------------------------------EFECTOS */
+.header-nav-item:hover{
+    text-decoration: underline;
+}
+.redes i:hover{
+    background: var(--color4);
+    border-radius: 50%;
+}
+/* --------------------------------------------------EFECTOS */
