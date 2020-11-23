@@ -62,7 +62,7 @@ main{
 .principal-section1{
     height: 230px;
     background-color: var(--color2);
-    background-image: url('https://negativespace.co/wp-content/uploads/2017/10/negative-space-code-html-css-editor-boskampi-thumb-1.jpg');
+    background-image: url(../images/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
