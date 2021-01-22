@@ -1,0 +1,74 @@
+.designs,.webPages,.apps,.animations,.contact{
+    display: none;
+    &.deploy{
+        display: initial;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        width: 100vw;
+        padding: 50px 25px 0;
+        color: $color1;
+        background: $color5;
+        h2{
+            font-family: $fuenteDestacada;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .proyects{
+            .proyect{
+                position: relative;
+                height: 23vh;
+                .presentation{
+                    background: $color2;
+                    position: absolute;
+                    top: 0;
+                    right: 22px;
+                    height: 15vh;
+                    width: 55vw;
+                    h3{
+                        font-size: 4rem;
+                        color: $color3;
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        top: 0;
+                        text-align: center;
+                    }
+                    a{
+                        width: 20px;
+                        position: absolute;
+                        bottom: 5px;
+                        left: 8px;
+                        svg{
+                            fill: $color5;
+                        }
+                    }
+                    /*h3,a{
+                        display: none;
+                    }         for desktop*/
+                    &:hover{
+                        cursor: pointer;
+                        /*h3,a{
+                            display: block;
+                        }         for desktop*/
+                    }
+                }
+                .description{
+                    background: $color3;
+                    position: absolute;
+                    top: 8vh;
+                    right: 0;
+                    width: 45vw;
+                    padding: 5px;
+                    h4{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

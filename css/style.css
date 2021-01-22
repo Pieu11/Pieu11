@@ -1,147 +1,188 @@
-:root{
-    --color1: #C67179;
-    --color2: #A1444D;
-    --color3: #832830;
-    --color4: #5E0F17;
-    --color5: #3A0006;
-}
+/*$color1: #C67179;
+$color2: #A1444D;
+$color3: #832830;
+$color4: #5E0F17;
+$color5: #3A0006;*/
 /* --------------------------------------------------GENERALES */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
+
+html {
+  font-size: 62.5%;
+}
+
+/*body{
+    overflow: hidden;
+    height: 100%;
+}*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+/* --------------------------------------------------GENERALES */
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.menu li {
+  font-size: 20px;
+  font-family: "Buda", cursive;
+  text-transform: capitalize;
+}
+.menu li a {
+  color: #748CAB;
+}
+.menu li a:hover {
+  color: #F0EBD8;
+}
+
+.home {
+  display: none;
+}
+.home.deploy {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  padding: 50px 25px 10px;
+  color: #F0EBD8;
+  background: #0D1321;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.home.deploy .name {
+  text-align: end;
+}
+.home.deploy .name h1 {
+  font-family: "Antic Didone", serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.home.deploy .name p, .home.deploy .name span {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+}
+.home.deploy .more {
+  text-align: center;
+  align-self: center;
+}
+.home.deploy .more h2 {
+  font-family: "Buda", cursive;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  align-self: center;
+}
+.home.deploy .more svg {
+  fill: #F0EBD8;
+  width: 50px;
+}
+
+.designs, .webPages, .apps, .animations, .contact {
+  display: none;
+}
+.designs.deploy, .webPages.deploy, .apps.deploy, .animations.deploy, .contact.deploy {
+  display: initial;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  padding: 50px 25px 0;
+  color: #F0EBD8;
+  background: #0D1321;
+}
+.designs.deploy h2, .webPages.deploy h2, .apps.deploy h2, .animations.deploy h2, .contact.deploy h2 {
+  font-family: "Antic Didone", serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.designs.deploy .proyects .proyect, .webPages.deploy .proyects .proyect, .apps.deploy .proyects .proyect, .animations.deploy .proyects .proyect, .contact.deploy .proyects .proyect {
+  position: relative;
+  height: 23vh;
+}
+.designs.deploy .proyects .proyect .presentation, .webPages.deploy .proyects .proyect .presentation, .apps.deploy .proyects .proyect .presentation, .animations.deploy .proyects .proyect .presentation, .contact.deploy .proyects .proyect .presentation {
+  background: #748CAB;
+  position: absolute;
+  top: 0;
+  right: 22px;
+  height: 15vh;
+  width: 55vw;
+  /*h3,a{
+      display: none;
+  }         for desktop*/
+}
+.designs.deploy .proyects .proyect .presentation h3, .webPages.deploy .proyects .proyect .presentation h3, .apps.deploy .proyects .proyect .presentation h3, .animations.deploy .proyects .proyect .presentation h3, .contact.deploy .proyects .proyect .presentation h3 {
+  font-size: 4rem;
+  color: #3E5C76;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+.designs.deploy .proyects .proyect .presentation a, .webPages.deploy .proyects .proyect .presentation a, .apps.deploy .proyects .proyect .presentation a, .animations.deploy .proyects .proyect .presentation a, .contact.deploy .proyects .proyect .presentation a {
+  width: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+}
+.designs.deploy .proyects .proyect .presentation a svg, .webPages.deploy .proyects .proyect .presentation a svg, .apps.deploy .proyects .proyect .presentation a svg, .animations.deploy .proyects .proyect .presentation a svg, .contact.deploy .proyects .proyect .presentation a svg {
+  fill: #0D1321;
+}
+.designs.deploy .proyects .proyect .presentation:hover, .webPages.deploy .proyects .proyect .presentation:hover, .apps.deploy .proyects .proyect .presentation:hover, .animations.deploy .proyects .proyect .presentation:hover, .contact.deploy .proyects .proyect .presentation:hover {
+  cursor: pointer;
+  /*h3,a{
+      display: block;
+  }         for desktop*/
+}
+.designs.deploy .proyects .proyect .description, .webPages.deploy .proyects .proyect .description, .apps.deploy .proyects .proyect .description, .animations.deploy .proyects .proyect .description, .contact.deploy .proyects .proyect .description {
+  background: #3E5C76;
+  position: absolute;
+  top: 8vh;
+  right: 0;
+  width: 45vw;
+  padding: 5px;
+}
+.designs.deploy .proyects .proyect .description h4, .webPages.deploy .proyects .proyect .description h4, .apps.deploy .proyects .proyect .description h4, .animations.deploy .proyects .proyect .description h4, .contact.deploy .proyects .proyect .description h4 {
+  font-size: 1.5rem;
+}
+.designs.deploy .proyects .proyect .description p, .webPages.deploy .proyects .proyect .description p, .apps.deploy .proyects .proyect .description p, .animations.deploy .proyects .proyect .description p, .contact.deploy .proyects .proyect .description p {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
     font-size: 62.5%;
+  }
 }
-a{
-    text-decoration: none;
-    cursor: pointer;
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 62.5%;
+  }
 }
-li{
-    list-style: none;
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
 }
-/* --------------------------------------------------GENERALES */
-
-
-/* --------------------------------------------------HEADER */
-header{
-    background: var(--color4);
-    height: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    width: 100%;
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 62.5%;
+  }
 }
-.logo{
-    
-}
-.logo img{
-    width: 45px;
-}
-.header-nav{
-    font-size: 1.7rem;
-}
-.header-nav ul{
-    display: flex;
-}
-.header-nav-item{
-    margin-left: 10px;
-}
-.header-nav-item a{
-    color: white;
-}
-/* --------------------------------------------------HEADER */
-
-
-/* --------------------------------------------------MAIN */
-main{
-    width: 100%;
-}
-.principal-section1{
-    height: 230px;
-    background-color: var(--color2);
-    background-image: url(../images/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-position: center;
-    width: 100%;
-}
-.principal-section1 p{
-    color: white;
-    font-size: 2.1rem;
-}
-.principal-section2{
-    background: var(--color2);
-    width: 100%;
-    padding: 50px 0;
-}
-.principal-section2 h1{
-    color: white;
-    border-bottom: 2px solid var(--color4);
-    width: 250px;
-    margin: 0 auto 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    font-size: 1.8rem;
-}
-.principal-section2 p{
-    color: black;
-    width: 250px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    font-size: 1.7rem;
-}
-/* --------------------------------------------------MAIN */
-
-
-/* --------------------------------------------------FOOTER */
-footer{
-    color: white;
-    background: var(--color5);
-    padding: 15px 0;
-    width: 100%;
-}
-.logo-footer{
-    margin: 0 auto;
-    width: max-content;
-}
-.logo-footer img{
-    width: 40px;
-}
-.redes{
-    border-top: 2px solid white;
-    display: flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 10px auto 0;
-    padding: 10px 15px 0;
-    width: max-content;
-}
-.redes i{
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-}
-/* --------------------------------------------------FOOTER */
-
-
-/* --------------------------------------------------EFECTOS */
-.header-nav-item:hover{
-    text-decoration: underline;
-}
-.redes i:hover{
-    background: var(--color4);
-    border-radius: 50%;
-}
-/* --------------------------------------------------EFECTOS */
