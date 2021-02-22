@@ -93,10 +93,10 @@ li {
   width: 50px;
 }
 
-.designs, .webPages, .apps, .animations, .contact {
+.designs, .webPages, .apps, .animations {
   display: none;
 }
-.designs.deploy, .webPages.deploy, .apps.deploy, .animations.deploy, .contact.deploy {
+.designs.deploy, .webPages.deploy, .apps.deploy, .animations.deploy {
   display: initial;
   position: absolute;
   bottom: 0;
@@ -106,17 +106,17 @@ li {
   color: #F0EBD8;
   background: #0D1321;
 }
-.designs.deploy h2, .webPages.deploy h2, .apps.deploy h2, .animations.deploy h2, .contact.deploy h2 {
+.designs.deploy h2, .webPages.deploy h2, .apps.deploy h2, .animations.deploy h2 {
   font-family: "Antic Didone", serif;
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 30px;
 }
-.designs.deploy .proyects .proyect, .webPages.deploy .proyects .proyect, .apps.deploy .proyects .proyect, .animations.deploy .proyects .proyect, .contact.deploy .proyects .proyect {
+.designs.deploy .projects .project, .webPages.deploy .projects .project, .apps.deploy .projects .project, .animations.deploy .projects .project {
   position: relative;
   height: 23vh;
 }
-.designs.deploy .proyects .proyect .presentation, .webPages.deploy .proyects .proyect .presentation, .apps.deploy .proyects .proyect .presentation, .animations.deploy .proyects .proyect .presentation, .contact.deploy .proyects .proyect .presentation {
+.designs.deploy .projects .project .presentation, .webPages.deploy .projects .project .presentation, .apps.deploy .projects .project .presentation, .animations.deploy .projects .project .presentation {
   background: #748CAB;
   position: absolute;
   top: 0;
@@ -127,7 +127,7 @@ li {
       display: none;
   }         for desktop*/
 }
-.designs.deploy .proyects .proyect .presentation h3, .webPages.deploy .proyects .proyect .presentation h3, .apps.deploy .proyects .proyect .presentation h3, .animations.deploy .proyects .proyect .presentation h3, .contact.deploy .proyects .proyect .presentation h3 {
+.designs.deploy .projects .project .presentation h3, .webPages.deploy .projects .project .presentation h3, .apps.deploy .projects .project .presentation h3, .animations.deploy .projects .project .presentation h3 {
   font-size: 4rem;
   color: #3E5C76;
   position: absolute;
@@ -136,22 +136,22 @@ li {
   top: 0;
   text-align: center;
 }
-.designs.deploy .proyects .proyect .presentation a, .webPages.deploy .proyects .proyect .presentation a, .apps.deploy .proyects .proyect .presentation a, .animations.deploy .proyects .proyect .presentation a, .contact.deploy .proyects .proyect .presentation a {
+.designs.deploy .projects .project .presentation a, .webPages.deploy .projects .project .presentation a, .apps.deploy .projects .project .presentation a, .animations.deploy .projects .project .presentation a {
   width: 20px;
   position: absolute;
   bottom: 5px;
   left: 8px;
 }
-.designs.deploy .proyects .proyect .presentation a svg, .webPages.deploy .proyects .proyect .presentation a svg, .apps.deploy .proyects .proyect .presentation a svg, .animations.deploy .proyects .proyect .presentation a svg, .contact.deploy .proyects .proyect .presentation a svg {
+.designs.deploy .projects .project .presentation a svg, .webPages.deploy .projects .project .presentation a svg, .apps.deploy .projects .project .presentation a svg, .animations.deploy .projects .project .presentation a svg {
   fill: #0D1321;
 }
-.designs.deploy .proyects .proyect .presentation:hover, .webPages.deploy .proyects .proyect .presentation:hover, .apps.deploy .proyects .proyect .presentation:hover, .animations.deploy .proyects .proyect .presentation:hover, .contact.deploy .proyects .proyect .presentation:hover {
+.designs.deploy .projects .project .presentation:hover, .webPages.deploy .projects .project .presentation:hover, .apps.deploy .projects .project .presentation:hover, .animations.deploy .projects .project .presentation:hover {
   cursor: pointer;
   /*h3,a{
       display: block;
   }         for desktop*/
 }
-.designs.deploy .proyects .proyect .description, .webPages.deploy .proyects .proyect .description, .apps.deploy .proyects .proyect .description, .animations.deploy .proyects .proyect .description, .contact.deploy .proyects .proyect .description {
+.designs.deploy .projects .project .description, .webPages.deploy .projects .project .description, .apps.deploy .projects .project .description, .animations.deploy .projects .project .description {
   background: #3E5C76;
   position: absolute;
   top: 8vh;
@@ -159,13 +159,64 @@ li {
   width: 45vw;
   padding: 5px;
 }
-.designs.deploy .proyects .proyect .description h4, .webPages.deploy .proyects .proyect .description h4, .apps.deploy .proyects .proyect .description h4, .animations.deploy .proyects .proyect .description h4, .contact.deploy .proyects .proyect .description h4 {
+.designs.deploy .projects .project .description h4, .webPages.deploy .projects .project .description h4, .apps.deploy .projects .project .description h4, .animations.deploy .projects .project .description h4 {
   font-size: 1.5rem;
 }
-.designs.deploy .proyects .proyect .description p, .webPages.deploy .proyects .proyect .description p, .apps.deploy .proyects .proyect .description p, .animations.deploy .proyects .proyect .description p, .contact.deploy .proyects .proyect .description p {
+.designs.deploy .projects .project .description p, .webPages.deploy .projects .project .description p, .apps.deploy .projects .project .description p, .animations.deploy .projects .project .description p {
   font-size: 1.2rem;
 }
 
+.contacts {
+  display: none;
+}
+.contacts.deploy {
+  display: initial;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  padding: 50px 25px 0;
+  color: #F0EBD8;
+  background: #0D1321;
+}
+.contacts.deploy h2 {
+  font-family: "Antic Didone", serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contacts.deploy .contactGrup {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 100px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: calc(((100vh - 92px) / 2) - (200px));
+}
+.contacts.deploy .contactGrup .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts.deploy .contactGrup .contact img {
+  width: 100%;
+}
+.contacts.deploy .contactGrup .contact h4 {
+  font-family: "Buda", cursive;
+  font-size: 24px;
+  color: #F0EBD8;
+}
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 62.5%;
+  }
+}
 @media only screen and (min-width: 768px) {
   html {
     font-size: 62.5%;

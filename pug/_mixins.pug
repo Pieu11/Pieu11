@@ -1,13 +1,19 @@
-mixin proyect(proyect)
-    .proyect
-        .presentation
-            h3 #{proyect[0]}
-            a(href=proyect[1] target="_blank")
-                +iconExternalContent
-        .description
-            h4 Description
-            p #{proyect[2]}
+mixin project(projects)
+    each project in projects
+        .project
+            .presentation
+                h3 #{project[0]}
+                a(href=project[1] target="_blank")
+                    +iconExternalContent
+            .description
+                h4 Description
+                p #{project[2]}
 
+mixin contacts
+    each contact in contacts
+        a(href=contact[2] target="_blank" class="contact")
+            img(src="images/"+contact[1]+".png")
+            h4 #{contact[0]}
 
 
 //-*********************************LOGOS

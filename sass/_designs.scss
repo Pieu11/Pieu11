@@ -1,4 +1,4 @@
-.designs,.webPages,.apps,.animations,.contact{
+.designs,.webPages,.apps,.animations{
     display: none;
     &.deploy{
         display: initial;
@@ -15,8 +15,8 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .proyects{
-            .proyect{
+        .projects{
+            .project{
                 position: relative;
                 height: 23vh;
                 .presentation{
