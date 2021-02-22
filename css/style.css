@@ -187,15 +187,20 @@ li {
 }
 .contacts.deploy .contactGrup {
   display: grid;
-  grid-template-columns: repeat(2, 130px);
-  grid-template-rows: repeat(2, 150px);
-  grid-gap: 100px 50px;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 120px);
+  grid-gap: 80px 30px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
-  margin-right: 15px;
-  margin-top: calc(((100vh - 92px) / 2) - (200px));
+  margin-right: 30px;
+  align-content: center;
+  position: absolute;
+  top: 92px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .contacts.deploy .contactGrup .contact {
   display: flex;

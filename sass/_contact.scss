@@ -22,8 +22,13 @@
             grid-gap: $gapHoriContact $gapVertContact;
             width: fit-content;
             margin-left: auto;
-            margin-right: 15px;
-            margin-top: $marginTopContacts;
+            margin-right: 30px;
+            align-content: center;
+            position: absolute;
+            top: 92px;
+            bottom: 0;
+            left: 0;
+            right: 0;
             .contact{
                 display: flex;
                 flex-direction: column;
